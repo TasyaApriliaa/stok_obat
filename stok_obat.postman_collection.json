@@ -1,0 +1,908 @@
+{
+	"info": {
+		"_postman_id": "c9a646a1-162e-4980-8d49-c3a73f3ae4ab",
+		"name": "stok_obat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20899505"
+	},
+	"item": [
+		{
+			"name": "stok obat",
+			"item": [
+				{
+					"name": "create stok obat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_obat",
+									"value": "10011",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nama_obat",
+									"value": "ambroxol",
+									"type": "text"
+								},
+								{
+									"key": "gambar_obat",
+									"type": "file",
+									"src": "/C:/Users/user/Desktop/paracetamol.jpg"
+								},
+								{
+									"key": "harga_jual",
+									"value": "6000",
+									"type": "text"
+								},
+								{
+									"key": "harga_beli",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "stok",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/obat/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"obat",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read stok obat",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/obat/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"obat",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Stok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_obat",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/obat/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"obat",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update stok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_obat",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nama_obat",
+									"value": "paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "gambar_obat",
+									"type": "file",
+									"src": "/C:/Users/user/Desktop/ambroxol.jpg"
+								},
+								{
+									"key": "harga_jual",
+									"value": "8000",
+									"type": "text"
+								},
+								{
+									"key": "harga_beli",
+									"value": "5050",
+									"type": "text"
+								},
+								{
+									"key": "stok",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/obat/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"obat",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pembeli",
+			"item": [
+				{
+					"name": "create pembeli",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pembeli",
+									"value": "10012",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nama_pembeli",
+									"value": "tasya",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "panam",
+									"type": "text"
+								},
+								{
+									"key": "no_hp",
+									"value": "081234567899",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "perempuan",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "2002-04-13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/pembeli/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"pembeli",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read pembeli",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/pembeli/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"pembeli",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update pembeli",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pembeli",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nama_pembeli",
+									"value": "tasy",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "padang",
+									"type": "text"
+								},
+								{
+									"key": "no_hp",
+									"value": "07521234",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "perempuan",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "2000-04-13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/pembeli/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"pembeli",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete pembeli",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_pembeli",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/pembeli/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"pembeli",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "supplier",
+			"item": [
+				{
+					"name": "Create supplier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_supplier",
+									"value": "lila",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "bandung",
+									"type": "text"
+								},
+								{
+									"key": "no_hp",
+									"value": "08123456667",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "perempuan",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "2013-07-13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/supplier/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"supplier",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update supplier",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_supplier",
+									"value": "tata",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "padang",
+									"type": "text"
+								},
+								{
+									"key": "no_hp",
+									"value": "0765432234",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "laki-laki",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "2019-08-08",
+									"type": "text"
+								},
+								{
+									"key": "id_supplier",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/supplier/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"supplier",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete supplier",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_supplier",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/supplier/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"supplier",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read supplier",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/supplier/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"supplier",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "barang masuk",
+			"item": [
+				{
+					"name": "create barang masuk",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tanggal_masuk",
+									"value": "2022-12-17",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "63",
+									"type": "text"
+								},
+								{
+									"key": "id_supplier",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "id_obat",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/barang_masuk/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"barang_masuk",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update barang masuk",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_masuk",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_masuk",
+									"value": "2022-12-17",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "id_supplier",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_obat",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas_lama",
+									"value": "60",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/barang_masuk/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"barang_masuk",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete barang masuk",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_masuk",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/barang_masuk/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"barang_masuk",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read barang masuk",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "barang_keluar",
+			"item": [
+				{
+					"name": "create barang keluar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tanggal_keluar",
+									"value": "2022-09-09",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "id_pembeli",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_obat",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/barang_keluar/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"barang_keluar",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read barang keluar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/uasweb/data/barang_keluar/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"barang_keluar",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update barang keluar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tanggal_keluar",
+									"value": "2020-09-09",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "id_pembeli",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_obat",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_keluar",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas_lama",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/barang_keluar/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"barang_keluar",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete barang keluar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_keluar",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/barang_keluar/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"barang_keluar",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login dan logout",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/uasweb/data/login/login.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"login",
+								"login.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/uasweb/data/login/logout.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"uasweb",
+								"data",
+								"login",
+								"logout.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
