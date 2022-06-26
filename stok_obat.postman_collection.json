@@ -12,6 +12,7 @@
 				{
 					"name": "create stok obat",
 					"request": {
+<<<<<<< HEAD
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -63,11 +64,16 @@
 								"create.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "read stok obat",
+<<<<<<< HEAD
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -91,12 +97,18 @@
 								"read.php"
 							]
 						}
+=======
+					"request": {
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "Delete Stok",
 					"request": {
+<<<<<<< HEAD
 						"method": "DELETE",
 						"header": [],
 						"body": {
@@ -122,12 +134,17 @@
 								"delete.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "update stok",
 					"request": {
+<<<<<<< HEAD
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -178,6 +195,10 @@
 								"update.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				}
@@ -189,6 +210,7 @@
 				{
 					"name": "create pembeli",
 					"request": {
+<<<<<<< HEAD
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -240,11 +262,16 @@
 								"create.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "read pembeli",
+<<<<<<< HEAD
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -268,12 +295,18 @@
 								"read.php"
 							]
 						}
+=======
+					"request": {
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "update pembeli",
 					"request": {
+<<<<<<< HEAD
 						"method": "PATCH",
 						"header": [],
 						"body": {
@@ -324,12 +357,17 @@
 								"update.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "Delete pembeli",
 					"request": {
+<<<<<<< HEAD
 						"method": "DELETE",
 						"header": [],
 						"body": {
@@ -355,6 +393,10 @@
 								"delete.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				}
@@ -366,6 +408,7 @@
 				{
 					"name": "Create supplier",
 					"request": {
+<<<<<<< HEAD
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -411,12 +454,17 @@
 								"create.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "update supplier",
 					"request": {
+<<<<<<< HEAD
 						"method": "PATCH",
 						"header": [],
 						"body": {
@@ -467,12 +515,17 @@
 								"update.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "delete supplier",
 					"request": {
+<<<<<<< HEAD
 						"method": "DELETE",
 						"header": [],
 						"body": {
@@ -498,11 +551,16 @@
 								"delete.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "read supplier",
+<<<<<<< HEAD
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -526,6 +584,11 @@
 								"read.php"
 							]
 						}
+=======
+					"request": {
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				}
@@ -537,6 +600,7 @@
 				{
 					"name": "create barang masuk",
 					"request": {
+<<<<<<< HEAD
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -583,12 +647,17 @@
 								"create.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "update barang masuk",
 					"request": {
+<<<<<<< HEAD
 						"method": "PATCH",
 						"header": [],
 						"body": {
@@ -639,12 +708,17 @@
 								"update.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "delete barang masuk",
 					"request": {
+<<<<<<< HEAD
 						"method": "DELETE",
 						"header": [],
 						"body": {
@@ -670,6 +744,10 @@
 								"delete.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
@@ -689,6 +767,7 @@
 				{
 					"name": "create barang keluar",
 					"request": {
+<<<<<<< HEAD
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -729,6 +808,10 @@
 								"create.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
@@ -736,6 +819,7 @@
 					"name": "read barang keluar",
 					"request": {
 						"method": "GET",
+<<<<<<< HEAD
 						"header": [],
 						"url": {
 							"raw": "http://localhost/uasweb/data/barang_keluar/read.php",
@@ -750,12 +834,16 @@
 								"read.php"
 							]
 						}
+=======
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "update barang keluar",
 					"request": {
+<<<<<<< HEAD
 						"method": "PATCH",
 						"header": [],
 						"body": {
@@ -806,12 +894,17 @@
 								"update.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
 				{
 					"name": "delete barang keluar",
 					"request": {
+<<<<<<< HEAD
 						"method": "DELETE",
 						"header": [],
 						"body": {
@@ -837,6 +930,10 @@
 								"delete.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				}
@@ -848,6 +945,7 @@
 				{
 					"name": "login",
 					"request": {
+<<<<<<< HEAD
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -878,6 +976,10 @@
 								"login.php"
 							]
 						}
+=======
+						"method": "GET",
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				},
@@ -885,6 +987,7 @@
 					"name": "logout",
 					"request": {
 						"method": "GET",
+<<<<<<< HEAD
 						"header": [],
 						"url": {
 							"raw": "http://localhost/uasweb/data/login/logout.php",
@@ -899,10 +1002,168 @@
 								"logout.php"
 							]
 						}
+=======
+						"header": []
+>>>>>>> github/master
 					},
 					"response": []
 				}
 			]
+<<<<<<< HEAD
+=======
+		},
+		{
+			"name": "createobat",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createbarangmasuk",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createsupplier",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createObat",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "barang_keluar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+>>>>>>> github/master
 		}
 	]
 }
