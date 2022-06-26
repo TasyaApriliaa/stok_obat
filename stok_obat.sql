@@ -27,14 +27,12 @@ CREATE TABLE `barang_keluar` (
   `tanggal_keluar` date NOT NULL,
   `kuantitas` int(7) NOT NULL,
   `total_harga` int(10) NOT NULL,
-  `id_pembeli` int(5) NOT NULL,
-  `id_obat` int(5) NOT NULL,
+  `id_pembeli` varchar(15) NOT NULL,
+  `id_obat` varchar(15) NOT NULL,
   PRIMARY KEY (`id_keluar`),
   KEY `id_obat` (`id_obat`),
-  KEY `id_pembeli` (`id_pembeli`),
-  CONSTRAINT `keluar_obat` FOREIGN KEY (`id_obat`) REFERENCES `obat` (`id_obat`),
-  CONSTRAINT `keluar_pembeli` FOREIGN KEY (`id_pembeli`) REFERENCES `pembeli` (`id_pembeli`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+  KEY `id_pembeli` (`id_pembeli`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,6 +41,7 @@ CREATE TABLE `barang_keluar` (
 
 LOCK TABLES `barang_keluar` WRITE;
 /*!40000 ALTER TABLE `barang_keluar` DISABLE KEYS */;
+INSERT INTO `barang_keluar` VALUES (6,'0000-00-00',7,56000,'1','1'),(7,'0000-00-00',7,56000,'1','1'),(8,'2022-09-09',7,56000,'1','1');
 /*!40000 ALTER TABLE `barang_keluar` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,14 +57,12 @@ CREATE TABLE `barang_masuk` (
   `tanggal_masuk` date NOT NULL,
   `kuantitas` int(7) NOT NULL,
   `total_beli` int(10) NOT NULL,
-  `id_supplier` int(5) NOT NULL,
-  `id_obat` int(5) NOT NULL,
+  `id_supplier` varchar(15) NOT NULL,
+  `id_obat` varchar(15) NOT NULL,
   PRIMARY KEY (`id_masuk`),
   KEY `obat_masuk` (`id_obat`),
-  KEY `id_supplier` (`id_supplier`),
-  CONSTRAINT `barang_masuk_ibfk_1` FOREIGN KEY (`id_supplier`) REFERENCES `supplier` (`id_supplier`),
-  CONSTRAINT `obat_masuk` FOREIGN KEY (`id_obat`) REFERENCES `obat` (`id_obat`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+  KEY `id_supplier` (`id_supplier`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,7 +71,7 @@ CREATE TABLE `barang_masuk` (
 
 LOCK TABLES `barang_masuk` WRITE;
 /*!40000 ALTER TABLE `barang_masuk` DISABLE KEYS */;
-INSERT INTO `barang_masuk` VALUES (4,'2022-06-02',7,0,10001,1),(5,'2022-04-09',5,20000,10001,1);
+INSERT INTO `barang_masuk` VALUES (1,'2022-12-17',90,630000,'1','1');
 /*!40000 ALTER TABLE `barang_masuk` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -111,14 +108,14 @@ DROP TABLE IF EXISTS `obat`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `obat` (
-  `id_obat` int(5) NOT NULL,
+  `id_obat` int(11) NOT NULL AUTO_INCREMENT,
   `nama_obat` varchar(50) NOT NULL,
   `gambar_obat` varchar(255) NOT NULL,
   `harga_jual` int(8) NOT NULL,
   `harga_beli` int(8) NOT NULL,
   `stok` int(8) NOT NULL,
   PRIMARY KEY (`id_obat`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,7 +124,7 @@ CREATE TABLE `obat` (
 
 LOCK TABLES `obat` WRITE;
 /*!40000 ALTER TABLE `obat` DISABLE KEYS */;
-INSERT INTO `obat` VALUES (0,'paracetamol','paracetamol.jpg',6000,5000,19),(1,'ambroxol','ambroxol.jpg',5000,4000,7),(10,'ambroxol','ambroxol.jpg',7000,5000,100);
+INSERT INTO `obat` VALUES (1,'aaa','aaaa',8000,7000,163),(3,'ambroxol','paracetamol.jpg',6000,5000,19);
 /*!40000 ALTER TABLE `obat` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,14 +136,14 @@ DROP TABLE IF EXISTS `pembeli`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pembeli` (
-  `id_pembeli` int(5) NOT NULL,
+  `id_pembeli` int(11) NOT NULL AUTO_INCREMENT,
   `nama_pembeli` varchar(35) NOT NULL,
   `alamat` text NOT NULL,
   `no_hp` varchar(20) NOT NULL,
   `jenis_kelamin` varchar(15) NOT NULL,
   `tanggal_lahir` date NOT NULL,
   PRIMARY KEY (`id_pembeli`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +152,7 @@ CREATE TABLE `pembeli` (
 
 LOCK TABLES `pembeli` WRITE;
 /*!40000 ALTER TABLE `pembeli` DISABLE KEYS */;
-INSERT INTO `pembeli` VALUES (10,'tasya','payakumbuh','081365152037','perempuan','2002-04-13');
+INSERT INTO `pembeli` VALUES (1,'tasy','payakumbuh','081234567899','perempuan','2002-04-13');
 /*!40000 ALTER TABLE `pembeli` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -167,14 +164,14 @@ DROP TABLE IF EXISTS `supplier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `supplier` (
-  `id_supplier` int(5) NOT NULL,
+  `id_supplier` int(11) NOT NULL AUTO_INCREMENT,
   `nama_supplier` varchar(35) NOT NULL,
   `alamat` text NOT NULL,
   `no_hp` varchar(20) NOT NULL,
   `jenis_kelamin` varchar(15) NOT NULL,
   `tanggal_lahir` date NOT NULL,
   PRIMARY KEY (`id_supplier`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,7 +180,7 @@ CREATE TABLE `supplier` (
 
 LOCK TABLES `supplier` WRITE;
 /*!40000 ALTER TABLE `supplier` DISABLE KEYS */;
-INSERT INTO `supplier` VALUES (10001,'tasya','panam','081234567890','perempuan','2002-04-13');
+INSERT INTO `supplier` VALUES (1,'lala','padang','08123456666','perempuan','2013-07-18'),(2,'tata','padang','0765432234','laki-laki','2019-08-08');
 /*!40000 ALTER TABLE `supplier` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -196,4 +193,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-26 14:12:06
+-- Dump completed on 2022-06-26 16:30:56

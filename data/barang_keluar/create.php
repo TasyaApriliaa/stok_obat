@@ -9,13 +9,15 @@ require_once('../../config/koneksi.php');
 /**
  * Get input data POST
  */
-$idKeluar = $_POST['id_keluar'] ?? '';
 $tanggalKeluar= $_POST['tanggal_keluar'] ?? '';
 $kuantitas = $_POST['kuantitas'] ?? '';
 //$totalHarga = $_POST['total_Harga'] ?? '';
 $idPembeli = $_POST['id_pembeli'] ?? '';
 $idObat = $_POST['id_obat'] ?? '';
 $isOk = false;
+
+
+
 
 
 
@@ -51,13 +53,14 @@ try{
          * Execute query
          */
         $statement->execute();
-        $query = "INSERT INTO barang_keluar (id_keluar, tanggal_keluar, kuantitas, total_harga, id_pembeli, id_obat) VALUES (:id_keluar, :tanggal_keluar, :kuantitas, :total_harga, :id_pembeli, :id_obat)";
+        $query = "INSERT INTO barang_keluar ( tanggal_keluar, kuantitas, total_harga, id_pembeli, id_obat) VALUES ( :tanggal_keluar, :kuantitas, :total_harga, :id_pembeli, :id_obat)";
         $statement = $connection->prepare($query);
         /**
          * Bind params
          */
-        $statement->bindValue(":id_keluar", $idKeluar);
+
         $statement->bindValue(":tanggal_keluar", $tanggalKeluar);
+
         $statement->bindValue(":kuantitas", $kuantitas);
         $statement->bindValue(":total_harga", $totalHarga);
         $statement->bindValue(":id_pembeli", $idPembeli);

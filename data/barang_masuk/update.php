@@ -102,12 +102,14 @@ try{
         /**
          * Bind params
          */
-        $statement->bindValue(":id_masuk", $idMasuk);
+
+
         $statement->bindValue(":tanggal_masuk", $tanggalMasuk);
         $statement->bindValue(":kuantitas", $kuantitas);
-        $statement->bindValue(":total_beli", $totaBeli);
+        $statement->bindValue(":total_beli", $totalBeli);
         $statement->bindValue(":id_supplier", $idSupplier);
         $statement->bindValue(":id_obat", $idObat);
+        $statement->bindValue(":id_masuk", $idMasuk);
 
         /**
          * Execute query
